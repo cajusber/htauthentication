@@ -3,8 +3,8 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.find_by(username: params[:username])
-    redirect_to login_path, notice: "Benutzername oder Passwort falsch." unless @user
+    @user = User.new(username: params[:username])
+    redirect_to login_path, notice: "Benutzername oder Passwort falsch." unless @user.authenticate_by_htpasswd(params[:password])
   end
 end
 

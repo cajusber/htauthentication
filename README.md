@@ -1,6 +1,12 @@
-GitHub Markup
+Htauthentication
 =============
 
+
+Installation
+-----------
+
+    gem 'htauthentication', git: 'git://github.com/cajusber/htauthentication.git'
+    
 
 ### Classes
 
@@ -17,8 +23,11 @@ Constant
     
     
     
-Installation
+Usage
 -----------
 
-    gem 'htauthentication', git: 'git://github.com/cajusber/htauthentication.git'
+    @user.authenticate_by_htpasswd(params[:password])
+    
+returns true or false. If true: sets @user.htpasswd_logged_in = true
+
 

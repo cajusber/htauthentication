@@ -7,11 +7,11 @@ require "htauthentication/version"
 Gem::Specification.new do |s|
   s.name        = "htauthentication"
   s.version     = Htauthentication::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Htauthentication."
-  s.description = "TODO: Description of Htauthentication."
+  s.authors     = ["Kai Berkemeyer"]
+  s.email       = ["info@kaiberkemeyer.de"]
+  s.homepage    = ""
+  s.summary     = "Htauthentication."
+  s.description = "Htauthentication."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

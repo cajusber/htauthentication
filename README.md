@@ -1,4 +1,5 @@
-= Htauthentication
+GitHub Markup
+=============
 
 
 ### Classes
@@ -19,5 +20,5 @@ Constant
 Installation
 -----------
 
-    gem install github-markup
+    gem 'htauthentication', git: 'git://github.com/cajusber/htauthentication.git'
 

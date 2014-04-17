@@ -1,0 +1,12 @@
+<%= form_tag create_session_path do %>
+  <h2 class="form-signin-heading">Login</h2>
+  <% if flash[:alert] %>
+    <p><%= flash[:alert] %></p>
+  <% end %>
+  <% if notice %>
+    <p><%= notice %></p>
+  <% end %>
+  <%= text_field_tag :username, params[:username], placeholder: 'Benutzername' %><br/>
+  <%= password_field_tag :password, params[:password], placeholder: 'Passwort' %><br/>
+  <%= submit_tag 'Login' %>
+<% end %>

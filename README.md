@@ -13,7 +13,7 @@ Running fast:
 
 Hook up your Gemfile:
 
-    gem 'htauthentication', '~> 0.1.0'
+    gem 'htauthentication', '~> 1.0.0'
     
 
 ### Classes

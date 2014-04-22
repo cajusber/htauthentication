@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Htauthentication::VERSION
   s.authors     = ["Kai Berkemeyer"]
   s.email       = ["info@kaiberkemeyer.de"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/cajusber/htauthentication"
   s.summary     = "Htauthentication."
   s.description = "Htauthentication lets you authenticate users by an htpasswd file."
 

@@ -1,11 +1,13 @@
 Htauthentication
 =============
 
+Htauthentication lets you authenticate users by an htpasswd file.
+
 
 Installation
 -----------
 
-    gem 'htauthentication', git: 'git://github.com/cajusber/htauthentication.git'
+  gem 'htauthentication', git: 'git://github.com/cajusber/htauthentication.git'
     
 
 ### Classes
@@ -14,20 +16,23 @@ Installation
       has_htpasswd_login
     end
     
-    
-    
-Constant
------------
+### Constant
 
     HTPASSWD_PATH = "/path/to/htpasswd"
-    
-    
+     
     
 Usage
 -----------
 
+    @user = User.new(username: params[:username])
     @user.authenticate_by_htpasswd(params[:password])
     
-returns true or false. If true: sets @user.htpasswd_logged_in = true
+The second line returns true or false, depending on whether the authentication by the htpasswd 
+file was successful. If true: sets @user.htpasswd_logged_in = true, otherwise = false.
+
+By default Htauthentication uses the attribute "username" to authenticate. If you want 
+to use an alternative attribute you can add its name as another parameter.
+
+    @user.authenticate_by_htpasswd(params[:password], "email")
 
 

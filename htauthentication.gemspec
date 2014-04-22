@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["info@kaiberkemeyer.de"]
   s.homepage    = ""
   s.summary     = "Htauthentication."
-  s.description = "Htauthentication."
+  s.description = "Htauthentication lets you authenticate users by an htpasswd file."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

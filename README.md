@@ -7,7 +7,13 @@ Htauthentication lets you authenticate users by an htpasswd file.
 Installation
 -----------
 
-  gem 'htauthentication', git: 'git://github.com/cajusber/htauthentication.git'
+    Running fast:
+
+        gem install htauthentication
+
+    Hook up your Gemfile:
+
+        gem "htauthentication"
     
 
 ### Classes

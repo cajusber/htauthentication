@@ -1,7 +1,7 @@
 Htauthentication
 =============
 
-Htauthentication lets you authenticate users by an htpasswd file.
+Htauthentication lets you authenticate users by a htpasswd file.
 
 
 Installation
@@ -11,7 +11,7 @@ Running fast:
 
     gem install htauthentication
 
-Hook up your Gemfile:
+Or hook up your Gemfile:
 
     gem 'htauthentication', '~> 1.0.0'
     
